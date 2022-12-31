@@ -2,9 +2,52 @@
     font-family: 'Work_Sans';
     src: url('../assets/fonts/WorkSans-Regular.ttf');
 }
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Work_Sans';
+.header {
+    padding: 45px 100px;
+    gap: 150px;
+    display: flex;
+    &-pages {
+        display: flex;
+        gap: 40px;
+        a {
+            color: #000;
+            font-size: 15px;
+            &.active {
+                color: #0082F3;
+            }
+        }
+    }
+}
+.main {
+    width: 100%;
+    &-container {
+        width: 1120px;
+        margin: 0 auto;
+    }
+    &-section {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 140px;
+        &-text__side {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            h2 {
+                font-size: 55px;
+                line-height: 60px;
+            }
+            p {
+                font-size: 24px;
+                line-height: 35px;
+            }
+        }
+        &-links {
+            display: flex;
+            gap: 8px;
+        }
+
+    }
 }
